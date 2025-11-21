@@ -1,9 +1,36 @@
-# CLINIC-APPOINTMENT-SYSTEM
+🏥 Clinic Appointment System
 
-~ Patient can book appointment with Doctors prior their visit
+A simple C console application for managing doctor appointments. It allows patients to book slots and doctors to view the daily queue, running entirely in the terminal.
 
-~ Doctor can view their upcoming Appointments & plan their schedule accordingly
+✨ Key Features
 
-~ Time is saved
+Booking System: Records Patient Name, Medical Problem (multi-word support), and Date.
 
-~ Operating cost of clinic is reduced(Need of assistant for manual appointment records is gone)
+Conflict Prevention: Automatically rejects bookings if the chosen date is already taken.
+
+Input Validation: Ensures dates follow the YYYY-MM-DD format.
+
+Queue View: Displays a formatted table of all upcoming appointments.
+
+🚀 Quick Start
+
+1. Compile
+
+Open your terminal/command prompt and run:
+
+gcc clinic_system.c -o clinic
+
+
+2. Run
+
+Windows: clinic.exe
+
+Mac/Linux: ./clinic
+
+⚙️ Configuration
+
+Max Capacity: Defined by MAX_APPTS (default: 5).
+
+Storage: In-memory (Data is reset when the program closes).
+
+Input Handling: Uses scanf(" %[^\n]...") to safely read full names and descriptions with spaces.
