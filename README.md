@@ -10,7 +10,7 @@ Conflict Prevention: Automatically rejects bookings if the chosen date is alread
 
 Input Validation: Ensures dates follow the YYYY-MM-DD format.
 
-Queue View: Displays a formatted table of all upcoming appointments.
+Queue View: Displays all upcoming appointments.
 
 🚀 Quick Start
 
@@ -32,5 +32,3 @@ Mac/Linux: ./clinic
 Max Capacity: Defined by MAX_APPTS (default: 5).
 
 Storage: In-memory (Data is reset when the program closes).
-
-Input Handling: Uses scanf(" %[^\n]...") to safely read full names and descriptions with spaces.
